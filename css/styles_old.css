@@ -11,8 +11,8 @@
   --grey: rgba(46, 47, 66, 0.7);
   --white: #fff;
   --dairy: #fcfcfc;
-  --font-body: "Roboto", sans-serif;
-  --font-logo: "Raleway", sans-serif;
+  --font-body: 'Roboto', sans-serif;
+  --font-logo: 'Raleway', sans-serif;
   --font-size-logo: 18px;
   --font-size-base: 16px;
   --font-size-md: 20px;
@@ -125,7 +125,7 @@ p {
 }
 
 .page-nav-link.current::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -170,8 +170,7 @@ p {
   padding-top: 188px;
   padding-bottom: 188px;
   background-image:
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.jpg);
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
@@ -221,7 +220,7 @@ p {
 }
 
 .principles {
-  padding-top: 120px;
+  padding-top: 1200px;
   padding-bottom: 120px;
 }
 
@@ -560,7 +559,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -767,7 +766,7 @@ input:checked+.checkbox-label .custom-checkbox {
   display: block;
   min-width: 169px;
   height: 56px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
