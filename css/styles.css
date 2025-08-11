@@ -592,6 +592,8 @@ input:checked+.checkbox-label .custom-checkbox {
 .principles .principlestitle,
 .team-card-title,
 .portfolio-title {
+  align-self: center;
+
   font-family: var(--font-body);
   font-weight: 500;
   font-size: var(--font-size-md);
@@ -605,7 +607,8 @@ input:checked+.checkbox-label .custom-checkbox {
 .team-card-text,
 .portfolio-text {
   font-size: var(--font-size-base);
-  font-weight: 400;
+
+  font-weight: 500;
   line-height: var(--line-height-base);
   letter-spacing: var(--letter-spacing-sm);
   color: var(--slate);
