@@ -26,8 +26,8 @@
       <div class="container container-header">
         <nav class="page-nav">
           <a class="logo header-logo" href="./index.html"
-            >Web<span class="logo-end">Studio</span>
-          </a>
+            >Web<span class="logo-end">Studio</span></a
+          >
           <ul class="page-nav-list">
             <li>
               <a class="page-nav-link current" href="./index.html">Studio</a>
@@ -39,17 +39,80 @@
         <address class="page-address">
           <ul class="address-list">
             <li>
-              <a class="address-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li>
-              <a class="address-link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
+              <a class="address-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="modal-close-btn" data-menu-close>
+            <svg width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="page-nav-list-mobile">
+            <li>
+              <a class="page-nav-link-mobile current" href="./index.html">Studio</a>
+            </li>
+            <li><a class="page-nav-link-mobile" href="">Portfolio</a></li>
+            <li>
+              <a class="page-nav-link-mobile" href="#" data-modal-open data-menu-close>Contacts</a>
+            </li>
+          </ul>
+          <address>
+            <ul class="address-list-mobile">
+              <li>
+                <a class="address-link-mobile current" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+              <li>
+                <a class="address-link-mobile" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+            </ul>
+          </address>
+          <div>
+            <ul class="social-links-list">
+              <li class="social-links-item">
+                <a class="social-links" href="" target="_blank">
+                  <svg class="social-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item">
+                <a class="social-links" href="" target="_blank">
+                  <svg class="social-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item">
+                <a class="social-links" href="" target="_blank">
+                  <svg class="social-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item">
+                <a class="social-links" href="" target="_blank">
+                  <svg class="social-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -75,8 +138,8 @@
               </div>
               <h3 class="principlestitle">Strategy</h3>
               <p class="principlestext">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
+                Our goal is to identify the business problem to walk away with the perfect and
+                creative solution.
               </p>
             </li>
             <li class="principles-list-item">
@@ -87,8 +150,8 @@
               </div>
               <h3 class="principlestitle">Punctuality</h3>
               <p class="principlestext">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
+                Bring the key message to the brand's audience for the best price within the shortest
+                possible time.
               </p>
             </li>
             <li class="principles-list-item">
@@ -99,8 +162,8 @@
               </div>
               <h3 class="principlestitle">Diligence</h3>
               <p class="principlestext">
-                Research and confirm brands with the strongest digital growth
-                opportunities and minimize risk.
+                Research and confirm brands with the strongest digital growth opportunities and
+                minimize risk.
               </p>
             </li>
             <li class="principles-list-item">
@@ -111,8 +174,8 @@
               </div>
               <h3 class="principlestitle">Technologies</h3>
               <p class="principlestext">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
+                Design practice focused on digital experiences. We bring forth a deep passion for
+                problem-solving.
               </p>
             </li>
           </ul>
@@ -120,17 +183,12 @@
       </section>
       <!-- end section1 -->
       <!-- section2 -->
-      <section class="team">
+      <section class="team hidden">
         <div class="container container-team">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-card">
-              <img
-                src="./images/team/mark.jpg"
-                alt="Mark Guerrero"
-                width="264"
-                height="260"
-              />
+              <img src="./images/team/mark.jpg" alt="Mark Guerrero" width="264" height="260" />
               <div class="team-card-content">
                 <h3 class="team-card-title">Mark Guerrero</h3>
                 <p class="team-card-text">Product Designer</p>
@@ -167,12 +225,7 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                src="./images/team/tom.jpg"
-                alt="Tom Ford"
-                width="264"
-                height="260"
-              />
+              <img src="./images/team/tom.jpg" alt="Tom Ford" width="264" height="260" />
               <div class="team-card-content">
                 <h3 class="team-card-title">Tom Ford</h3>
                 <p class="team-card-text">Frontend Developer</p>
@@ -209,12 +262,7 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                src="./images/team/camila.jpg"
-                alt="Camila Garcia"
-                width="264"
-                height="260"
-              />
+              <img src="./images/team/camila.jpg" alt="Camila Garcia" width="264" height="260" />
               <div class="team-card-content">
                 <h3 class="team-card-title">Camila Garcia</h3>
                 <p class="team-card-text">Marketing</p>
@@ -251,12 +299,7 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                src="./images/team/daniel.jpg"
-                alt="Daniel Wilson"
-                width="264"
-                height="260"
-              />
+              <img src="./images/team/daniel.jpg" alt="Daniel Wilson" width="264" height="260" />
               <div class="team-card-content">
                 <h3 class="team-card-title">Daniel Wilson</h3>
                 <p class="team-card-text">UI Designer</p>
@@ -298,7 +341,7 @@
       <!-- end section2 -->
       <!-- section3 -->
 
-      <section class="portfolio">
+      <section class="portfolio hidden">
         <div class="container container-portfolio">
           <h2 class="portfolio-heading">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -311,9 +354,8 @@
                   height="300"
                 />
                 <p class="img-description">
-                  14 Stylish and User-Friendly App Design Concepts · Task
-                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                  · Cloud Storage App
+                  14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+                  Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
               </div>
 
@@ -331,9 +373,8 @@
                   height="300"
                 />
                 <p class="img-description">
-                  14 Stylish and User-Friendly App Design Concepts · Task
-                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                  · Cloud Storage App
+                  14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+                  Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
               </div>
               <div class="portfolio-card-content">
@@ -350,9 +391,8 @@
                   height="300"
                 />
                 <p class="img-description">
-                  14 Stylish and User-Friendly App Design Concepts · Task
-                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                  · Cloud Storage App
+                  14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+                  Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
               </div>
               <div class="portfolio-card-content">
@@ -369,9 +409,8 @@
                   height="300"
                 />
                 <p class="img-description">
-                  14 Stylish and User-Friendly App Design Concepts · Task
-                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                  · Cloud Storage App
+                  14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+                  Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
               </div>
               <div class="portfolio-card-content">
@@ -388,9 +427,8 @@
                   height="300"
                 />
                 <p class="img-description">
-                  14 Stylish and User-Friendly App Design Concepts · Task
-                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                  · Cloud Storage App
+                  14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+                  Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
               </div>
               <div class="portfolio-card-content">
@@ -407,9 +445,8 @@
                   height="300"
                 />
                 <p class="img-description">
-                  14 Stylish and User-Friendly App Design Concepts · Task
-                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                  · Cloud Storage App
+                  14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+                  Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
               </div>
               <div class="portfolio-card-content">
@@ -423,15 +460,16 @@
       <!-- end section3 -->
     </main>
     <!-- footer -->
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container footer-row">
         <div class="container-footer">
-          <a class="logo footer-logo" href="./index.html"
-            >Web<span class="logo-end">Studio</span></a
-          >
+          <a class="logo footer-logo" href="./index.html">
+            Web
+            <span class="logo-end">Studio</span>
+          </a>
           <p class="footer-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
+            Increase the flow of customers and sales for your business with digital marketing &
+            growth solutions.
           </p>
         </div>
         <div class="footer-social-medias">
@@ -490,9 +528,9 @@
     </footer>
     <!-- end footer -->
     <!-- modal start -->
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-btn">
+        <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -502,12 +540,7 @@
           <div class="modal-field">
             <label for="user-name" class="modal-label">Name</label>
             <div class="input-wrap">
-              <input
-                type="text"
-                name="user-name"
-                class="modal-input"
-                id="user-name"
-              />
+              <input type="text" name="user-name" class="modal-input" id="user-name" />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
@@ -516,12 +549,7 @@
           <div class="modal-field">
             <label for="user-phone" class="modal-label">Phone</label>
             <div class="input-wrap">
-              <input
-                type="tel"
-                name="user-phone"
-                class="modal-input"
-                id="user-phone"
-              />
+              <input type="tel" name="user-phone" class="modal-input" id="user-phone" />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
@@ -530,12 +558,7 @@
           <div class="modal-field">
             <label for="user-email" class="modal-label">Email</label>
             <div class="input-wrap">
-              <input
-                type="email"
-                name="user-email"
-                class="modal-input"
-                id="user-email"
-              />
+              <input type="email" name="user-email" class="modal-input" id="user-email" />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
@@ -564,8 +587,10 @@
                   <use href="./images/icons.svg#icon-checkmark"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="privacy-link">Privacy Policy</a>
+              <span class="checkbox-content">
+                <span class="checkbox-text">I accept the terms and conditions of the</span>
+                <a href="#" class="privacy-link">Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button type="submit" class="btn modal-send-btn">Send</button>
@@ -573,5 +598,7 @@
       </div>
     </div>
     <!-- modal end -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
