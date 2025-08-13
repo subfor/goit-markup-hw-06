@@ -656,8 +656,8 @@ input:checked+.checkbox-label .custom-checkbox {
 }
 
 .team-list {
-  margin: 0;
-  padding: 0;
+  /* margin: 0; */
+  /* padding: 0; */
   flex-wrap: wrap;
   display: flex;
   gap: 72px;
