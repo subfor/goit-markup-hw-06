@@ -598,8 +598,7 @@ input:checked+.checkbox-label .custom-checkbox {
 }
 
 .principles .principlestitle,
-.team-card-title,
-.portfolio-title {
+.team-card-title {
   align-self: center;
 
   font-family: var(--font-body);
@@ -731,7 +730,15 @@ input:checked+.checkbox-label .custom-checkbox {
   padding-bottom: 96px;
 }
 
+/* .container-portfolio { */
+/*   display: flex; */
+/*   flex-direction: column; */
+/*   align-items: center; */
+/*   gap: 24px; */
+/* } */
+
 .portfolio-card {
+  width: 100%;
   background-color: var(--white);
   display: flex;
   flex-direction: column;
@@ -752,6 +759,18 @@ input:checked+.checkbox-label .custom-checkbox {
   justify-content: center;
   /* column-gap: 24px; */
   row-gap: 48px;
+}
+
+.portfolio-title {
+  align-self: left;
+
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-md);
+  letter-spacing: var(--letter-spacing-sm);
+  color: var(--navy-blue);
+  margin-bottom: 8px;
 }
 
 .portfolio-card-content {
@@ -775,6 +794,13 @@ input:checked+.checkbox-label .custom-checkbox {
 .img-slider {
   position: relative;
   overflow: hidden;
+}
+
+/* зображення не більше за батька */
+.img-slider img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .img-description {
