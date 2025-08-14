@@ -1070,6 +1070,18 @@ input:checked + .checkbox-label .custom-checkbox {
     --cols: 4;
   }
 
+  .principles .principlestitle {
+    align-self: start;
+    font-weight: 500;
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-md);
+    letter-spacing: var(--letter-spacing-md);
+  }
+
+  .principles .principlestext {
+    font-weight: 400;
+  }
+
   .portfolio-card {
     box-shadow: none;
   }
