@@ -1,7 +1,4 @@
 /* ===== Reset & base ===== */
-.hidden {
-  display: none;
-}
 
 :root {
   --iris: #4d5ae5;
@@ -233,7 +230,6 @@ img {
   color: var(--iris);
 }
 
-/* соц-іконки у моб.меню */
 .mobile-menu .social-links-list {
   display: flex;
   gap: 40px;
@@ -499,8 +495,7 @@ input:checked + .checkbox-label .custom-checkbox {
 .hero {
   background-color: var(--navy-blue);
   background-image:
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero/Dark-bg-mob1.jpg);
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -512,8 +507,7 @@ input:checked + .checkbox-label .custom-checkbox {
 @media (min-resolution: 192dpi) {
   .hero {
     background-image:
-      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/hero/Dark-bg-mob1.jpg);
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero2.jpg);
   }
 }
 
@@ -540,7 +534,6 @@ input:checked + .checkbox-label .custom-checkbox {
   padding: 96px 0;
 }
 
-/* Єдина сітка (принципи/команда/портфоліо) */
 .principles-list,
 .team-list,
 .portfolio-list {
@@ -652,7 +645,6 @@ input:checked + .checkbox-label .custom-checkbox {
   margin-bottom: 8px;
 }
 
-/* Portfolio image overlay base */
 .img-slider {
   position: relative;
   overflow: hidden;
@@ -671,7 +663,6 @@ input:checked + .checkbox-label .custom-checkbox {
   display: none;
 }
 
-/* соц-іконки у картках команди */
 .team-card .social-links-list {
   display: flex;
   gap: 24px;
@@ -696,7 +687,6 @@ input:checked + .checkbox-label .custom-checkbox {
   padding: 96px 0;
 }
 
-/* Mobile: колонка, центр */
 .footer-row {
   display: flex;
   flex-direction: column;
@@ -705,7 +695,6 @@ input:checked + .checkbox-label .custom-checkbox {
   text-align: center;
 }
 
-/* Лого + абзац */
 .container-footer .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -730,7 +719,6 @@ input:checked + .checkbox-label .custom-checkbox {
   text-align: left;
 }
 
-/* Соцмережі */
 .footer-social-medias {
   display: flex;
   flex-direction: column;
@@ -814,6 +802,7 @@ input:checked + .checkbox-label .custom-checkbox {
   padding: 0 16px;
   border-radius: 4px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  opacity: 0.3;
 }
 
 .subscribe-input::placeholder {
@@ -932,19 +921,59 @@ input:checked + .checkbox-label .custom-checkbox {
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  /* списки — 2 колонки */
+  .hero {
+    padding: 112px 0;
+  }
+
+  .hero-container {
+    gap: 36px;
+  }
+
+  .hero .hero-title {
+    width: 496px;
+    height: 120px;
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-xl);
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    color: var(--white);
+    text-align: center;
+  }
+
+  .principles .principlestitle {
+    align-self: start;
+    font-weight: 700;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-lg);
+    letter-spacing: var(--letter-spacing-lg);
+  }
+
+  .principles .principlestext {
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    line-height: var(--line-height-base);
+    letter-spacing: var(--letter-spacing-sm);
+    color: var(--slate);
+  }
+
+  .team-card-text,
+  .portfolio-text {
+    font-weight: 400;
+    line-height: var(--line-height-base);
+    letter-spacing: var(--letter-spacing-sm);
+    color: var(--slate);
+  }
+
   .principles-list,
   .team-list,
   .portfolio-list {
     --cols: 2;
   }
 
-  /* центрований контейнер футера з внутрішніми відступами по макету */
   .page-footer .container {
     padding-inline: 108px;
   }
 
-  /* 2 колонки + форма нижче */
   .footer-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1005,6 +1034,16 @@ input:checked + .checkbox-label .custom-checkbox {
     min-width: 165px;
     height: 40px;
   }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
+  }
+
+  .checkbox-content {
+    flex-direction: row;
+    gap: 4px;
+  }
 }
 
 /* ===== Desktop (≥1158px) ===== */
@@ -1026,17 +1065,19 @@ input:checked + .checkbox-label .custom-checkbox {
     padding: 24px 0;
   }
 
-  /* Principles 4, Team 4, Portfolio 3 */
   .principles-list,
   .team-list {
     --cols: 4;
+  }
+
+  .portfolio-card {
+    box-shadow: none;
   }
 
   .portfolio-list {
     --cols: 3;
   }
 
-  /* Увімкнути оверлей */
   .img-description {
     display: block;
     position: absolute;
@@ -1055,6 +1096,14 @@ input:checked + .checkbox-label .custom-checkbox {
     pointer-events: none;
   }
 
+  .portfolio-card:hover {
+    box-shadow:
+      0 1px 6px rgba(46, 47, 66, 0.08),
+      0 1px 1px rgba(46, 47, 66, 0.16),
+      0 2px 1px rgba(46, 47, 66, 0.08);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
   .portfolio-card:hover .img-description {
     transform: translateY(0);
   }
@@ -1063,7 +1112,6 @@ input:checked + .checkbox-label .custom-checkbox {
     display: flex;
   }
 
-  /* футер: свій контейнер та 3 колонки */
   .page-footer .container {
     max-width: 1158px;
     margin: 0 auto;
@@ -1093,6 +1141,7 @@ input:checked + .checkbox-label .custom-checkbox {
   .subscribe-input {
     width: 264px;
     height: 40px;
+    opacity: 1;
   }
 
   .subscribe-button {

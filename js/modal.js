@@ -1,4 +1,4 @@
-; (() => {
+;(() => {
   const refs = {
     // Додати атрибут data-modal-open на кнопку відкриття
     openModalBtn: document.querySelector('[data-modal-open]'),
@@ -16,23 +16,22 @@
     refs.modal.classList.toggle('is-open')
   }
 })()
+;(() => {
+  const contactLink = document.querySelector(
+    '.page-nav-link-mobile[data-modal-open][data-menu-close]'
+  )
+  const mobileMenu = document.querySelector('[data-menu]')
+  const modal = document.querySelector('[data-modal]')
 
-  ; (() => {
-    const contactLink = document.querySelector(
-      '.page-nav-link-mobile[data-modal-open][data-menu-close]'
-    )
-    const mobileMenu = document.querySelector('[data-menu]')
-    const modal = document.querySelector('[data-modal]')
+  if (contactLink) {
+    contactLink.addEventListener('click', (e) => {
+      e.preventDefault()
 
-    if (contactLink) {
-      contactLink.addEventListener('click', (e) => {
-        e.preventDefault()
+      // Закриваємо мобільне меню
+      mobileMenu.classList.remove('is-open')
 
-        // Закриваємо мобільне меню
-        mobileMenu.classList.remove('is-open')
-
-        // Відкриваємо модалку
-        modal.classList.add('is-open')
-      })
-    }
-  })()
+      // Відкриваємо модалку
+      modal.classList.add('is-open')
+    })
+  }
+})()

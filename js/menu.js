@@ -1,18 +1,44 @@
-(() => {
-  const refs = {
-    // Додати атрибут data-modal-open на кнопку відкриття
-    openModalBtn: document.querySelector('[data-menu-open]'),
-    // Додати атрибут data-modal-close на кнопку закриття
-    closeModalBtn: document.querySelector('[data-menu-close]'),
-    // Додати атрибут data-modal на бекдроп модалки
-    modal: document.querySelector('[data-menu]'),
-  };
+// js/menu.js
+;(() => {
+  const menu = document.querySelector('[data-menu]')
+  const openBtn = document.querySelector('[data-menu-open]')
+  const closeBtns = document.querySelectorAll('[data-menu-close]')
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  if (!menu || !openBtn) return
 
-  function toggleModal() {
-    // is-open це клас який буде додаватися/забиратися на бекдроп при натисканні на кнопки
-    refs.modal.classList.toggle('is-open');
+  const open = () => {
+    menu.classList.add('is-open')
+    // document.body.classList.add('no-scroll'); // якщо захочеш блокувати скрол
   }
-})();
+
+  const close = () => {
+    menu.classList.remove('is-open')
+    // document.body.classList.remove('no-scroll');
+  }
+
+  const toggle = () => (menu.classList.contains('is-open') ? close() : open())
+
+  // навішуємо слухачі
+  openBtn.addEventListener('click', toggle)
+  closeBtns.forEach((btn) => btn.addEventListener('click', close))
+
+  // Закривати по Esc
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') close()
+  })
+
+  // Закривати при кліку поза меню
+  menu.addEventListener('click', (e) => {
+    // клік по бекдропу (порожне місце), а не по контенту
+    if (e.target === menu) close()
+  })
+
+  // Гарантовано закрити на старті
+  close()
+
+  // При переході на tablet/desktop — закривати, щоб не «залипало»
+  const mql = window.matchMedia('(min-width: 768px)')
+  const handleMQ = () => close()
+  if (mql.addEventListener) mql.addEventListener('change', handleMQ)
+  else mql.addListener(handleMQ)
+})()
